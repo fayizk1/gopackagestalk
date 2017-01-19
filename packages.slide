@@ -1,0 +1,53 @@
+Go Walkthrough: Packages
+
+Fayiz Musthafa
+
+* Go programs are made up of packages
+
+- All Go source is part of a package.
+
+- Every file begins with a package statement.
+
+- Programs start in package main.
+
+- For very small programs, main is the only package you need to write.
+
+* The shape of a package
+
+* Packages collect related code.
+
+- They can be big or small,and may be spread across multiple files.
+
+- All the files in a package live in a single directory.
+
+- The net/http package exports more than 100 names. (18 files)
+
+- The errors package exports just one. (1 file)
+
+* Well documented
+
+https://golang.org/pkg/
+
+*  bytes+strings
+
+- Byte slices represent a mutable, resizable, contiguous list of bytes. 
+
+- Strings, on the other hand, represent an immutable, fixed-size, contiguous list of bytes.
+
+.play stringbytes.go /S2 OMIT/,/S3 OMIT/
+
+
+* encoding/json
+
+- Go offers built-in support for JSON encoding and decoding, including to and from built-in and custom data types.
+
+.play json.go
+
+* net/http
+
+.code http1.go
+
+.code http2.go
+
+.code http3.go
+
