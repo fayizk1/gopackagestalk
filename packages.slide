@@ -12,8 +12,6 @@ Fayiz Musthafa
 
 - For very small programs, main is the only package you need to write.
 
-* The shape of a package
-
 * Packages collect related code.
 
 - They can be big or small,and may be spread across multiple files.
@@ -34,20 +32,43 @@ https://golang.org/pkg/
 
 - Strings, on the other hand, represent an immutable, fixed-size, contiguous list of bytes.
 
-.play stringbytes.go /S2 OMIT/,/S3 OMIT/
+*  bytes+strings
 
+.code stringbytes.go /S1 OMIT/,/S2 OMIT/
+
+*  bytes+strings
+
+.code stringbytes.go /S2 OMIT/,/S3 OMIT/
 
 * encoding/json
 
 - Go offers built-in support for JSON encoding and decoding, including to and from built-in and custom data types.
 
-.play json.go
+* encoding/json
+
+.code json.go /S1 OMIT/,/S2 OMIT/
+
+* encoding/json
+
+.code json.go /S2 OMIT/,/S3 OMIT/
+
+* encoding/json
+
+.code json.go /S3 OMIT/,/S4 OMIT/
+
+* encoding/json
+
+.code json.go /S4 OMIT/,/S5 OMIT/
 
 * net/http
 
 .code http1.go
 
+* net/http
+
 .code http2.go
+
+* net/http
 
 .code http3.go
 
